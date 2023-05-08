@@ -389,6 +389,18 @@ h3:before {
   margin-left: 5px;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  background-color: #FFFFFF;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 nav button {
   background: none;
   border: none;
@@ -458,7 +470,7 @@ header .intro {
   max-height: 100%;
 }
 header .intro h2 {
-  margin: 35px 0px;
+  margin-top: 100px;
 }
 header .contactLinks {
   display: -webkit-box;
@@ -468,13 +480,22 @@ header .contactLinks {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 50px;
+}
+header .contactLinks li {
+  margin-right: 50px;
+  padding: 15px 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
 }
 header .contactLinks a {
   margin: 20px 0;
+}
+header .linkedin {
+  background-color: #000000;
+}
+header .linkedin a {
+  color: #FFFFFF;
 }
 header .introContainer {
   max-height: 100%;
