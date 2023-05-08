@@ -95,8 +95,12 @@
     //     padding: 25px 15px 45px 15px;
     // }
         .skillsList {
+
+            ul {
+                width: 50%;
+            }
             li {
-                margin: 44px;
+                margin: 30px;
             }
             // i {
             //     font-size: 2rem;
