@@ -5,6 +5,7 @@ nav {
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 
     button {
         background: none;
@@ -15,133 +16,133 @@ nav {
             cursor:pointer;
         }
 
-        .fa-angle-down{
-            position: absolute;
-            left: 50%;
-            bottom: -2px;
-            font-size: 2rem;
-            color: $white;
+        // .fa-angle-down{
+        //     position: absolute;
+        //     left: 50%;
+        //     bottom: -2px;
+        //     font-size: 2rem;
+        //     color: $white;
             
+        // }
+    }
+}
+
+.webMenu {
+display: none;
+padding: 20px 0px;
+
+a {
+    text-decoration: none;
+    margin-right: 65px;
+    }
+}
+
+.mobileMenuButton {
+    display: block;
+    border: none;
+    background: none;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    color: $black;
+
+    &:hover,
+        &:focus {
+            color: $red;
         }
+}
+
+.mobileMenu {
+    width: 100%;
+    display:none;
+    background-color: $black;
+    padding: 15px 0px;
+    position: relative;
+    top: 45px;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+
     }
 
-    .webMenu {
-        display: none;
-        padding: 20px 0px;
-        
+    a {
+        text-decoration: none;
+        color: $white;
 
-        a {
-            text-decoration: none;
-            margin-right: 65px;
-        }
+            &:hover,
+                &:focus {
+                    color: $red;
+                }
     }
-    
-    .mobileMenuButton {
-        display: block;
-        border: none;
-        background: none;
-        position: absolute;
-        right: 30px;
-        top: 25px;
-        color: $black;
+}
 
-        &:hover,
-            &:focus {
-                color: $red;
-            }
-    }
-
-    .mobileMenu {
-        width: 100%;
-        display:none;
-        background-color: $black;
-        padding: 15px 0px;
-        position: relative;
-        top: 45px;
-
-        ul {
-            display: flex;
-            justify-content: space-around;
-
-        }
-
-        a {
-            text-decoration: none;
-            color: $white;
-
-                &:hover,
-                    &:focus {
-                        color: $red;
-                    }
-        }
-    }
-
-    .revealMenu {
-        display: block;
-    }
+.revealMenu {
+    display: block;
 }
 
 header {
     max-height: 150vh;
+}
 
-    .intro {
-            
-        max-height: 100%;
+.intro {
+        
+    max-height: 100%;
 
-        h2 {
-            // margin: 35px 0px;
-            margin-top: 100px;
-        }
-    }
-    
-        .contactLinks {
-            display: flex;
-            flex-direction: row;
-            // justify-content: space-between;
-            margin-bottom: 50px;
-
-            li {
-                    margin-right: 50px;
-                    padding: 15px 20px;
-                    border: 2px solid $black;
-                    border-radius: 5px;
-                }
-
-            a {
-                margin: 20px 0;
-            }
-        }
-
-        .linkedin {
-            background-color: $black;
-            
-                a {
-                    color: $white;
-                }
-        }
-    .introContainer {
-        max-height: 100%;
-    }
-    
-    .photoContainer {
-
-        max-width: 100%;
-        max-height: 100%;
-
-        img {
-            display:inline-block;
-            object-fit: cover;
-            max-height: 100%;
-            max-width: 100%;
-    
-        }
-    }
-
-    .pronouns {
-        margin: 0;
-        font-size: 58%;
+    h2 {
+        // margin: 35px 0px;
+        margin-top: 100px;
     }
 }
+
+.contactLinks {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    margin-bottom: 50px;
+
+    li {
+            margin-right: 50px;
+            padding: 15px 20px;
+            border: 2px solid $black;
+            border-radius: 5px;
+        }
+
+    a {
+        margin: 20px 0;
+    }
+}
+
+.linkedin {
+    background-color: $black;
+    
+    a {
+        color: $white;
+    }
+}
+.introContainer {
+    max-height: 100%;
+}
+
+.photoContainer {
+
+    max-width: 100%;
+    max-height: 100%;
+
+    img {
+        display:inline-block;
+        object-fit: cover;
+        max-height: 100%;
+        max-width: 100%;
+
+    }
+}
+
+.pronouns {
+    margin: 0;
+    font-size: 58%;
+}
+
 
 .about {
     padding: 20px;
@@ -157,32 +158,33 @@ header {
         margin-top: 5px;
         color: $white;
     }
+}
 
-    .skillsList {
+.skillsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0px 45px 0px;
+
+    li {
+        margin: 20px;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 5px 0px 45px 0px;
+        flex-direction: column;
 
-        li {
-                margin: 20px;
-                display: flex;
-                flex-direction: column;
-        
-                p {
-                    margin: 0 auto;
-                    align-items: center;
-                }
-            }
-        
-            i {
-                color: $white;
-                font-size: 2rem;
-                align-self: center;
-                margin-bottom: 3px;
-            }
+        p {
+            margin: 0 auto;
+            align-items: center;
+        }
     }
+    
+        i {
+            color: $white;
+            font-size: 2rem;
+            align-self: center;
+            margin-bottom: 3px;
+        }
+}
     
     // .fa-brands, 
     // .fa-solid,
@@ -199,21 +201,21 @@ header {
     // }
 
 
-    .skillSubtitle {
-        color: $white;
-        text-transform: uppercase;
-        font-size: .6rem;
-    }
+.skillSubtitle {
+    color: $white;
+    text-transform: uppercase;
+    font-size: .6rem;
 }
+
 
 .projects {
     padding: 20px 20px 0px 20px;
-
-    .projectRowOne,
-    .projectRowTwo {
-        display: flex;
-        flex-direction: column;
-    }
+}
+    // .projectRowOne,
+    // .projectRowTwo {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
 
     .projectContainer {
         border-radius: 8px;
@@ -227,24 +229,31 @@ header {
         box-shadow: none;
         margin: 7px auto;
         position: relative;
+    }
 
+    .webProject {
+        display: none;
+        // flex-direction: row;
+    }
         .projectTitle {
-            position: absolute;
-            top: 10%;
+            // position: absolute;
+            // top: 10%;
             font-size: 1.3rem;
             text-align: center;
             margin: 0;
         }
 
         img {
+            // max-width: 100%;
             max-width: 100%;
+            max-height: 100%;
+            // margin-top: 30px;
         }
 
         .phonePreview {
             max-height: 100%;
             max-width: 100%;
         }
-    }
 
     .projectOne {
         background-color: $color5;
@@ -271,7 +280,7 @@ header {
         position: absolute;
         border-radius: 8px;
         height: 395px;
-        width: 100%;
+        // width: 100%;
         border: none;
         box-shadow: none;
         margin: 7px auto;
@@ -286,7 +295,7 @@ header {
         h4 {
             font-size: 1.3rem;
             text-align: center;
-            margin: 0;
+            margin-bottom: 5px;
         }
 
         p {
@@ -294,12 +303,12 @@ header {
             color: $white;
             margin: 0;
         }
-
+    }
         .projectConnect {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-
+        }
             .projectViewButton {
                 font-size: .9rem;
                 border: none;
@@ -318,9 +327,7 @@ header {
                     background-color: $black;
                 }
             }
-        }
-    }
-
+        
     .hidden {
         display: none;
     }
@@ -345,7 +352,7 @@ header {
         display: flex;
         justify-content:space-evenly;
         align-items: center;
-
+    }
         .overlaySkills {
             color: $grey;
             background-color: $white;
@@ -353,11 +360,15 @@ header {
             padding: 8px;
             font-size: 0.9rem;
         }
-    }
-}
+    
+
 
 .overlay.reveal {
     opacity: 1;
+    display: flex;
+}
+
+.mobileProject {
     display: flex;
 }
 

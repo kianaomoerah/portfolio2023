@@ -18,6 +18,7 @@
     <header>
         <nav>
             <!-- <button><i class="fa-solid fa-angle-down bounce"></i></i></button> -->
+        
             <p>Kiana Omoerah</p>
             <ul class="webMenu fadeIn" >
                 <li><a href="#about">About</a></li>
@@ -25,8 +26,9 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+          
             <button class="mobileMenuButton fadeIn"><i class="fa-solid fa-bars"></i></button>
-            <div class="mobileMenu">
+            <div class="mobileMenu wrapper">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -37,7 +39,7 @@
         </nav>
         <section class="intro">
             <div class="introContainer wrapper">
-                <h2 class="miniBorder fadeIn">Front-End Developer</h2>
+                <h2 class="miniBorder">Front-End Developer</h2>
                 <h1 class="fadeIn">Hello, I am Kiana Omoerah <span class="pronouns">(She/Her)</span></h1>
                 <ul class="contactLinks fadeIn">
                     <li class="linkedin"><a href="https://www.linkedin.com/in/kiana-omoerah-82783013b/" target= "_blank" >LinkedIn</a></li>
@@ -120,134 +122,102 @@
     </section>
     <section class="projects wrapper" id="projects">
         <h3>Projects</h3>
-        <p>click on any project to learn more!</p>
-        <div class="projectRowOne">
-            <div class="projectContainer projectOne" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-                <h4 class="projectTitle">Delicious</h4>
-                <img src="./assets/deliciousWebsite.png" alt="a preview of the declicious website">
+        <p class="mobileProject ">click on any project to learn more!</p>
+            <div class="projectContainer projectOne mobileProject" >
+                <h4 class="projectTitle">Splash</h4>
+                <img src="./assets/splash.png" alt="a preview of the splash website on a mobile phone">
                 <div class="overlay overlayOne">
-                    <h4>Delicious</h4>
+                    <h4>Splash</h4>
                     <i class="fa-solid fa-xmark overlayClose"></i>
-                    <p>PSD conversion from design to a multi-page, functional and responsive website. Features a mobile responive menu and functional javascript comment section.</p>
+                    <p>Treat yourself and wow your friends! Find a new and exciting cocktail using the splash app.</p>
                    <ul class="overlaySkillsList">
                         <li class="overlaySkills">HTML5</li>
                         <li class="overlaySkills">Sass</li>
                         <li class="overlaySkills">Javascript</li>
+                        <li class="overlaySkills">APIs</li>
                    </ul>
                    <div class="projectConnect">
-                        <a class="projectViewButton" href="https://delicious-kianaomoerah.netlify.app" target= "_blank">View Live</a>
-                        <a  class="projectViewButton" href="https://github.com/kianaomoerah/kianaOmoerahProjectOne" target= "_blank">GitHub</a>
+                        <a class="projectViewButton" href="https://splashcocktails.netlify.app" target= "_blank">View Live</a>
+                        <a  class="projectViewButton" href="https://github.com/kianaomoerah/splashCocktailApp" target= "_blank">GitHub</a>
                     </div>
                 </div>
             </div>
-            <div class="projectContainer projectTwo" data-aos="fade-left" data-aos-duration="900" data-aos-once="true">
-                <h4 class="projectTitle">Cocktail Recipe Finder</h4>
-                <img class="phonePreview" src="./assets/sipMeBabyApp.png" alt="a preview of the sip me baby one more time app">
-                <div class="overlay overlayTwo">
-                    <h4>Sip Me Baby One More Time</h4>
-                    <i class="fa-solid fa-xmark overlayClose"></i>
-                    <p> Find a new cocktail using this app to treat yourself and wow your friends. Search by liquor/ ingredient, or generate a random cocktail! <br/> (fondly named with reference to pop star Britney Spears)</p>
-                    <ul class="overlaySkillsList">
-                        <li class="overlaySkills">HTML5</li>
-                        <li class="overlaySkills">Sass</li>
-                        <li class="overlaySkills">Javascript</li>
-                        <li class="overlaySkills">APIs</li>
-                    </ul>
-                    <div class="projectConnect">
-                        <a class="projectViewButton" href="https://teamnumberonejuno.github.io/cocktailGeneratorApp/" target= "_blank">View Live</a>
-                        <a class="projectViewButton" href="https://github.com/TeamNumberOneJuno/cocktailGeneratorApp" target= "_blank">GitHub</a>
-                    </div>
+            <div class="projectContainer projectOne webProject">
+              <div class="projectInfo">
+                <h4 class="projectTitle">Splash</h4>
+                <p>Javascript | APIs</p>
+                <p>Treat yourself and wow your friends! Find a new and exciting cocktail using the splash app.</p>
+                <div class="projectConnect">
+                  <a class="projectViewButton" href="https://splashcocktails.netlify.app" target="_blank">View Live</a>
+                  <a class="projectViewButton" href="https://github.com/kianaomoerah/splashCocktailApp"
+                    target="_blank">GitHub</a>
                 </div>
+              </div>
+              <img src="./assets/splash.png" alt="a preview of the splash web app in mobile view" />
             </div>
-        </div>
-        <div class="projectRowTwo">
-            <div class="projectContainer projectThree" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-                <h4 class="projectTitle">The Lazy Planter</h4>
-                <img src="./assets/theLazyPlanter.png" alt="a preview of the lazy planter website">
-                <div class="overlay overlayThree">
-                    <h4>The Lazy Planter</h4>
-                    <i class="fa-solid fa-xmark overlayClose"></i>
-                    <p>Whether it's your first or newest addition, this react app will help you find the perfect low maintenance plant</p>
-                    <ul class="overlaySkillsList">
-                        <li class="overlaySkills">HTML5</li>
-                        <li class="overlaySkills">CSS</li>
-                        <li class="overlaySkills">React</li>
-                        <li class="overlaySkills">Firebase</li>
-                    </ul>
-                    <div class="projectConnect">
-                        <a class="projectViewButton" href="https://thelazyplanter.netlify.app" target= "_blank">View Live</a>
-                        <a class="projectViewButton" href="https://github.com/kianaomoerah/kianaOmoerahProjectThree" target= "_blank">GitHub</a>
-                    </div>
+            <!-- removed old projects -->
+            <div class="projectContainer projectOne mobileProject">
+              <h4 class="projectTitle">The Resilient Planter</h4>
+              <img src="./assets/splash.png" alt="a preview of the splash website on a mobile phone">
+              <div class="overlay overlayOne">
+                <h4>THe Resilient Planter</h4>
+                <i class="fa-solid fa-xmark overlayClose"></i>
+                <p>Whether it's your first or newst plant addition, this react app will help you find the perfect low maintenance plant!</p>
+                <ul class="overlaySkillsList">
+                  <li class="overlaySkills">React Native</li>
+                </ul>
+                <div class="projectConnect">
+                  <!-- <a class="projectViewButton" href="https://delicious-kianaomoerah.netlify.app" target="_blank">View Live</a> -->
+                  <a class="projectViewButton" href="https://github.com/kianaomoerah/PlantShop"
+                    target="_blank">GitHub</a>
                 </div>
+              </div>
+            </div>  
+            <div class="projectContainer projectOne webProject">
+              <div class="projectInfo">
+                <h4 class="projectTitle">The Reslient Planter</h4>
+                <p>React Native</p>
+                <p>Treat yourself and wow your friends! Find a new and exciting cocktail using the splash app.</p>
+                <div class="projectConnect">
+                  <!-- <a class="projectViewButton" href="https://delicious-kianaomoerah.netlify.app" target="_blank">View Live</a> -->
+                  <a class="projectViewButton" href="https://github.com/kianaomoerah/PlantShop"
+                    target="_blank">GitHub</a>
+                </div>
+              </div>
+              <img src="./assets/splash.png" alt="a preview of the Reslient Planter react native mobile app" />
             </div>
-            <div class="projectContainer projectFour" data-aos="fade-left" data-aos-duration="900" data-aos-once="true">
+            <div class="projectContainer projectOne mobileProject">
+              <h4 class="projectTitle">Sun Run</h4>
+              <img src="./assets/splash.png" alt="a preview of the splash website on a mobile phone">
+              <div class="overlay overlayOne">
+                <h4>Sun Run</h4>
+                <i class="fa-solid fa-xmark overlayClose"></i>
+                <p>Your perfect running partner! Using geoloaction, preferred date, and length of run, plan to leave right at sunrise or make it home before sunset.</p>
+                <ul class="overlaySkillsList">
+                  <li class="overlaySkills">HTML5</li>
+                  <li class="overlaySkills">CSS</li>
+                  <li class="overlaySkills">React</li>
+                  <li class="overlaySkills">APIs</li>
+                </ul>
+                <div class="projectConnect">
+                  <a class="projectViewButton" href="https://sun-run.netlify.app" target="_blank">View Live</a>
+                  <a class="projectViewButton" href="https://github.com/JunoSunRun/project-4-sun-run"
+                    target="_blank">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="projectContainer projectOne webProject">
+              <div class="projectInfo">
                 <h4 class="projectTitle">Sun Run</h4>
-                <img src="./assets/SunRunApp.png"
-                    alt="a preview of the sun run web app">
-                <div class="overlay overlayFour">
-                    <h4>Sun Run</h4>
-                    <i class="fa-solid fa-xmark overlayClose"></i>
-                    <p> Your perfect running partner! Using geolocation, preferred date, and length of run, plan to leave right at sunrise or to make it home before sunset.</p>
-                    <ul class="overlaySkillsList">
-                        <li class="overlaySkills">HTML5</li>
-                        <li class="overlaySkills">CSS</li>
-                        <li class="overlaySkills">React</li>
-                        <li class="overlaySkills">APIs</li>
-                    </ul>
-                    <div class="projectConnect">
-                        <a class="projectViewButton" href="https://sun-run.netlify.app" target= "_blank">View
-                                Live</a>
-                        <a class="projectViewButton" href="https://github.com/JunoSunRun/project-4-sun-run" target= "_blank">GitHub</a>
-                    </div>
+                <p>HTML5 | CSS | React | APIs</p>
+                <p>Your perfect running partner! Using geoloaction, preferred date, and length of run, plan to leave right at sunrise or make it home before sunset.</p>
+                <div class="projectConnect">
+                  <a class="projectViewButton" href="https://sun-run.netlify.app" target="_blank">View Live</a>
+                  <a class="projectViewButton" href="https://github.com/JunoSunRun/project-4-sun-run" target="_blank">GitHub</a>
                 </div>
+              </div>
+              <img src="./assets/splash.png" alt="a preview of the splash web app in mobile view" />
             </div>
-        </div>
-        <div class="projectRowOne">
-            <div class="projectContainer projectOne" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-                <h4 class="projectTitle">Yummy</h4>
-                <img class="phonePreview" src="./assets/yummyApp.png" alt="a preview of the yummy web app">
-                <div class="overlay overlayOne">
-                    <h4>Yummy</h4>
-                    <i class="fa-solid fa-xmark overlayClose"></i>
-                    <p>A react app to help you find any recipe that your heart desires. Search for your own recipe or use one of our featured popular or veggie recipe options. Click on any item to see instructions and ingredient details</p>
-                    <ul class="overlaySkillsList">
-                        <li class="overlaySkills">HTML5</li>
-                        <li class="overlaySkills">CSS</li>
-                        <li class="overlaySkills">React</li>
-                        <li class="overlaySkills">APIs</li>
-                        <li class="overlaySkills">Node Packages</li>
-                    </ul>
-                    <div class="projectConnect">
-                        <a class="projectViewButton" href="https://yummyrecipesapp.netlify.app/" target="_blank">View
-                            Live</a>
-                        <a class="projectViewButton" href="https://github.com/kianaomoerah/yummyApp"
-                            target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="projectContainer projectTwo hidden" data-aos="fade-left" data-aos-duration="900" data-aos-once="true">
-                <h4 class="projectTitle">Coming Soon!</h4>
-                <img src="./assets/sipMeBabyApp.png" alt="a preview of the sip me baby one more time app">
-                <div class="overlay overlayTwo">
-                    <h4>Sip Me Baby One More Time</h4>
-                    <i class="fa-solid fa-xmark overlayClose"></i>
-                    <p> Find a new cocktail using this app to treat yourself and wow your friends. Search by liquor/ ingredient,
-                        or generate a random cocktail! <br /> (fondly named with reference to pop star Britney Spears)</p>
-                    <ul class="overlaySkillsList">
-                        <li class="overlaySkills">HTML5</li>
-                        <li class="overlaySkills">Sass</li>
-                        <li class="overlaySkills">Javascript</li>
-                        <li class="overlaySkills">APIs</li>
-                    </ul>
-                    <div class="projectConnect">
-                        <a class="projectViewButton" href="https://teamnumberonejuno.github.io/cocktailGeneratorApp/"
-                            target="_blank">View Live</a>
-                        <a class="projectViewButton" href="https://github.com/TeamNumberOneJuno/cocktailGeneratorApp"
-                            target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <section class="contact" id="contact">
         <div class="wrapper">
