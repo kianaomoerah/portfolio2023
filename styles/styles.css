@@ -394,6 +394,10 @@ nav {
   top: 0;
   background-color: #FFFFFF;
   width: 100vw;
+  height: 55px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,7 +431,7 @@ nav button:hover {
   background: none;
   position: absolute;
   right: 30px;
-  top: 25px;
+  top: 10px;
   color: #000000;
 }
 .mobileMenuButton:hover, .mobileMenuButton:focus {
@@ -435,19 +439,27 @@ nav button:hover {
 }
 
 .mobileMenu {
-  width: 100%;
+  width: 25%;
   display: none;
   background-color: #000000;
   padding: 15px 0px;
   position: relative;
-  top: 45px;
+  top: 113px;
+  right: 15px;
 }
 .mobileMenu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mobileMenu li {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 5px 0px;
 }
 .mobileMenu a {
   text-decoration: none;
@@ -459,6 +471,10 @@ nav button:hover {
 
 .revealMenu {
   display: block;
+}
+
+.name {
+  margin-left: 13px;
 }
 
 header {
@@ -526,7 +542,7 @@ header {
 }
 
 .skills {
-  background-color: #6a5a70;
+  background-color: #ADB0C7;
   padding-top: 30px;
 }
 .skills h3 {
@@ -643,15 +659,15 @@ img {
 }
 
 .projectOne {
-  background-color: #cdeed4;
+  background-color: #FEFAF4;
 }
 
 .projectTwo {
-  background-color: #83948A;
+  background-color: #E4EDE8;
 }
 
 .projectThree {
-  background-color: #e69686;
+  background-color: #DABEB6;
 }
 
 .projectFour {
@@ -690,7 +706,7 @@ img {
 }
 .overlay p {
   text-align: center;
-  color: #FFFFFF;
+  color: #6d7277;
   margin: 0;
 }
 
@@ -730,15 +746,15 @@ img {
 }
 
 .overlayOne {
-  background-color: #cdeed4;
+  background-color: #FEFAF4;
 }
 
 .overlayTwo {
-  background-color: #83948A;
+  background-color: #E4EDE8;
 }
 
 .overlayThree {
-  background-color: #e69686;
+  background-color: #DABEB6;
 }
 
 .overlayFour {
@@ -799,6 +815,7 @@ img {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0px;
+  margin-bottom: 10px;
 }
 .contact h3,
 .contact h4 {
@@ -985,8 +1002,6 @@ footer p {
     padding: 0px 50px;
   }
   .contactLinks {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;

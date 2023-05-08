@@ -3,6 +3,8 @@ nav {
     top: 0;
     background-color: $white;
     width: 100vw;
+    height: 55px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     z-index: 10;
@@ -43,7 +45,7 @@ a {
     background: none;
     position: absolute;
     right: 30px;
-    top: 25px;
+    top: 10px;
     color: $black;
 
     &:hover,
@@ -53,19 +55,26 @@ a {
 }
 
 .mobileMenu {
-    width: 100%;
+    width: 25%;
     display:none;
     background-color: $black;
     padding: 15px 0px;
     position: relative;
-    top: 45px;
+    top: 113px;
+    right: 15px;
 
     ul {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        // justify-content: space-around;
+        // width: 25%;
 
     }
 
+    li {
+       align-self: center;
+       padding: 5px 0px;
+    }
     a {
         text-decoration: none;
         color: $white;
@@ -79,6 +88,10 @@ a {
 
 .revealMenu {
     display: block;
+}
+
+.name {
+    margin-left: 13px;
 }
 
 header {
@@ -325,7 +338,7 @@ header {
 
         p {
             text-align: center;
-            color: $white;
+            color: $grey;
             margin: 0;
         }
     }
@@ -415,6 +428,7 @@ header {
         font-size: 1.5rem;
         font-weight: 600;
         letter-spacing: 0px;
+        margin-bottom: 10px;
     }
 
     h3, 
