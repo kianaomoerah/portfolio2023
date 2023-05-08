@@ -891,7 +891,7 @@ footer p {
     height: 100vh;
   }
   .intro .introContainer,
-.intro .photoContainer {
+  .intro .photoContainer {
     width: 50%;
   }
   .intro .introContainer {
@@ -961,7 +961,7 @@ footer p {
 }
 @media (min-width: 675px) {
   .projects .projectRowOne,
-.projects .projectRowTwo {
+  .projects .projectRowTwo {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -971,7 +971,7 @@ footer p {
     margin: 7px 25px;
   }
   .projects .projectTwo,
-.projects .projectFour {
+  .projects .projectFour {
     margin-top: 100px;
   }
   .projects .projectFour {
