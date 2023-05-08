@@ -165,7 +165,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5px 0px 45px 0px;
+    // padding: 5px 0px 45px 0px;
 
     li {
         margin: 20px;
@@ -178,12 +178,37 @@ header {
         }
     }
     
-        i {
-            color: $white;
-            font-size: 2rem;
-            align-self: center;
-            margin-bottom: 3px;
+    i {
+        color: $white;
+        font-size: 2rem;
+        align-self: center;
+        margin-bottom: 3px;
+    }
+}
+
+.skillsList {
+    .ruby {
+        li {
+            margin: 28px;
         }
+    }
+}
+
+.ruby {
+
+    li {
+    margin: 24px;
+    font-size: 3rem;
+    }
+    
+    .devicon-rails-plain-wordmark {
+    font-size: 3rem;
+    }
+
+    i {
+        margin-bottom: 0;
+    }
+
 }
     
     // .fa-brands, 
@@ -374,8 +399,11 @@ header {
 
 .contact {
     background-color: $color6;
-    height: 75vh;
-    padding: 60px 20px;
+    // height: 75vh;
+    // padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h3 {
         font-size: 1rem;
@@ -399,26 +427,38 @@ header {
     p {
         text-align: center;
     }
+}
 
+.contactFlexContainer {
+    margin-bottom: 10px;
+}
     form {
         border: none;
         width: 100%;
         display: flex;
         flex-direction: column;
-
+    }
         textarea {
             resize: none;
-        }
-
-        input,
-        textarea {
             border-radius: 8px;
             border: none;
             font-weight: 400;
             letter-spacing: -0.2px;
             line-height: 1.75rem;
             width: 100%;
-            margin: 10px;
+            padding: 7px 20px;
+            color: $grey;
+            font-size: 0.8rem;
+    }
+
+        input {
+            border-radius: 8px;
+            border: none;
+            font-weight: 400;
+            letter-spacing: -0.2px;
+            line-height: 1.75rem;
+            width: 49%;
+            // margin: 10px;
             padding: 7px 20px;
             color: $grey;
             font-size: 0.8rem;
@@ -428,7 +468,16 @@ header {
 
             }
         }
-    }
+
+        input,
+        textarea {
+            ::placeholder {
+                    font-weight: 300;
+                    // padding: 7px 20px;
+            
+                }
+        }
+    
 
     .contactSubmit {
         border: none;
@@ -446,11 +495,12 @@ header {
             background-color: $black;
         }
     }
-}
+
 
 footer {
     background-color: $color6;
     text-align: center;
+    padding-top: 10px;
 
     p {
         margin: 0;

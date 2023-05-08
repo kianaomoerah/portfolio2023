@@ -23,24 +23,26 @@
 @media (min-width: 1080px) {
 
     .contact {
-        height: 65vh;
+        height: 50vh;
+    }
 
         .contactFlexContainer {
                 display: flex;
                 flex-direction: row;
-        
+                justify-content: space-between;
+                // margin-bottom: 10px;
             }
         
-            fieldset {
-                padding: 0% 20%;
+            // fieldset {
+            //     // padding: 0% 20%;
 
-                textarea {
-                    width: 98%;
-                  }
-            }
+            //     textarea {
+            //         // width: 98%;
+            //       }
+            // }
     }
 
-}
+
 
 @media (min-width: 1025px) {
 
@@ -88,17 +90,17 @@
         }
         
 
-    .skills {
+    // .skills {
 
-        padding: 25px 15px 45px 15px;
-    }
+    //     padding: 25px 15px 45px 15px;
+    // }
         .skillsList {
             li {
                 margin: 44px;
             }
-            i {
-                font-size: 3rem;
-            }
+            // i {
+            //     font-size: 2rem;
+            // }
         }
     
 
@@ -131,13 +133,13 @@
 
 //    .projects {
 
-        .projectContainer {
+        // .projectContainer {
 
-            h4 {
-                // top: 15%;
-                // margin
-            }
-        }
+        //     // h4 {
+        //     //     // top: 15%;
+        //     //     // margin
+        //     // }
+        // }
    }
 // }
 

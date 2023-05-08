@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -291,7 +291,7 @@ html {
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 html, body {
@@ -548,7 +548,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5px 0px 45px 0px;
 }
 .skillsList li {
   margin: 20px;
@@ -572,6 +571,21 @@ header {
   -ms-flex-item-align: center;
       align-self: center;
   margin-bottom: 3px;
+}
+
+.skillsList .ruby li {
+  margin: 28px;
+}
+
+.ruby li {
+  margin: 24px;
+  font-size: 3rem;
+}
+.ruby .devicon-rails-plain-wordmark {
+  font-size: 3rem;
+}
+.ruby i {
+  margin-bottom: 0;
 }
 
 .skillSubtitle {
@@ -766,8 +780,15 @@ img {
 
 .contact {
   background-color: #F8F5F2;
-  height: 75vh;
-  padding: 60px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contact h3 {
   font-size: 1rem;
@@ -788,7 +809,12 @@ img {
 .contact p {
   text-align: center;
 }
-.contact form {
+
+.contactFlexContainer {
+  margin-bottom: 10px;
+}
+
+form {
   border: none;
   width: 100%;
   display: -webkit-box;
@@ -799,39 +825,69 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contact form textarea {
+
+textarea {
   resize: none;
-}
-.contact form input,
-.contact form textarea {
   border-radius: 8px;
   border: none;
   font-weight: 400;
   letter-spacing: -0.2px;
   line-height: 1.75rem;
   width: 100%;
-  margin: 10px;
   padding: 7px 20px;
   color: #6d7277;
   font-size: 0.8rem;
 }
-.contact form input ::-webkit-input-placeholder, .contact form textarea ::-webkit-input-placeholder {
+
+input {
+  border-radius: 8px;
+  border: none;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 1.75rem;
+  width: 49%;
+  padding: 7px 20px;
+  color: #6d7277;
+  font-size: 0.8rem;
+}
+input ::-webkit-input-placeholder {
   font-weight: 300;
 }
-.contact form input ::-moz-placeholder, .contact form textarea ::-moz-placeholder {
+input ::-moz-placeholder {
   font-weight: 300;
 }
-.contact form input :-ms-input-placeholder, .contact form textarea :-ms-input-placeholder {
+input :-ms-input-placeholder {
   font-weight: 300;
 }
-.contact form input ::-ms-input-placeholder, .contact form textarea ::-ms-input-placeholder {
+input ::-ms-input-placeholder {
   font-weight: 300;
 }
-.contact form input ::placeholder,
-.contact form textarea ::placeholder {
+input ::placeholder {
   font-weight: 300;
 }
-.contact .contactSubmit {
+
+input ::-webkit-input-placeholder, textarea ::-webkit-input-placeholder {
+  font-weight: 300;
+}
+
+input ::-moz-placeholder, textarea ::-moz-placeholder {
+  font-weight: 300;
+}
+
+input :-ms-input-placeholder, textarea :-ms-input-placeholder {
+  font-weight: 300;
+}
+
+input ::-ms-input-placeholder, textarea ::-ms-input-placeholder {
+  font-weight: 300;
+}
+
+input ::placeholder,
+textarea ::placeholder {
+  font-weight: 300;
+}
+
+.contactSubmit {
   border: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -844,13 +900,14 @@ img {
   -ms-flex-item-align: center;
       align-self: center;
 }
-.contact .contactSubmit:hover, .contact .contactSubmit:focus-visible {
+.contactSubmit:hover, .contactSubmit:focus-visible {
   background-color: #000000;
 }
 
 footer {
   background-color: #F8F5F2;
   text-align: center;
+  padding-top: 10px;
 }
 footer p {
   margin: 0;
@@ -879,9 +936,9 @@ footer p {
 }
 @media (min-width: 1080px) {
   .contact {
-    height: 65vh;
+    height: 50vh;
   }
-  .contact .contactFlexContainer {
+  .contactFlexContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -889,12 +946,9 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .contact fieldset {
-    padding: 0% 20%;
-  }
-  .contact fieldset textarea {
-    width: 98%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (min-width: 1025px) {
@@ -950,15 +1004,8 @@ footer p {
   width: 100%;
 }
 
-.skills {
-  padding: 25px 15px 45px 15px;
-}
-
 .skillsList li {
   margin: 44px;
-}
-.skillsList i {
-  font-size: 3rem;
 }
 
 @media (min-width: 765px) and (max-width: 1024px) {
