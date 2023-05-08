@@ -568,26 +568,6 @@ header .pronouns {
       align-self: center;
   margin-bottom: 3px;
 }
-.skills .fa-brands,
-.skills .fa-solid,
-.skills .devicon-vscode-plain,
-.skills .devicon-jquery-plain,
-.skills .devicon-figma-plain,
-.skills .devicon-firebase-plain {
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-}
-.skills .fa-brands:hover,
-.skills .fa-solid:hover,
-.skills .devicon-vscode-plain:hover,
-.skills .devicon-jquery-plain:hover,
-.skills .devicon-figma-plain:hover,
-.skills .devicon-firebase-plain:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
-}
 .skills .skillSubtitle {
   color: #FFFFFF;
   text-transform: uppercase;
