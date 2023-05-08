@@ -596,9 +596,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -623,12 +623,21 @@ header {
 
 img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 85%;
+}
+
+.sunRunImage {
+  max-height: 90%;
 }
 
 .phonePreview {
   max-height: 100%;
   max-width: 100%;
+}
+
+.projectInfo p:first-of-type {
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 
 .projectOne {
@@ -656,7 +665,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px;
+  padding: 5px 30px;
   opacity: 0;
   position: absolute;
   border-radius: 8px;
@@ -877,6 +886,7 @@ textarea ::placeholder {
   transition: all 0.3s;
   background-color: #000000;
   color: white;
+  border: 2px solid #000000;
   cursor: pointer;
   margin: 0;
   padding: 20px 30px;
@@ -896,6 +906,12 @@ footer p {
 }
 
 @media (min-width: 1250px) {
+  .sunRunInfo {
+    padding-left: 100px;
+  }
+  .sunRunImage {
+    width: 40%;
+  }
   .webMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -916,6 +932,12 @@ footer p {
   }
 }
 @media (min-width: 1080px) {
+  .sunRunInfo {
+    padding-left: 100px;
+  }
+  .sunRunImage {
+    width: 40%;
+  }
   .contact {
     height: 50vh;
   }
@@ -933,6 +955,9 @@ footer p {
   }
 }
 @media (min-width: 1025px) {
+  .sunRunInfo {
+    padding-left: 55px;
+  }
   h1 {
     font-size: 3.8rem;
     padding-bottom: 80px;
@@ -1003,6 +1028,9 @@ footer p {
   }
 }
 @media (min-width: 575px) and (max-width: 768px) {
+  .sunRunInfo {
+    padding-left: 0;
+  }
   .photoContainer img {
     max-width: 100%;
     height: 565px;
@@ -1050,8 +1078,8 @@ footer p {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin: 0 auto;
     max-width: 50%;
+    padding-left: 15px;
   }
   .projectConnect a {
     margin: 0px 10px;

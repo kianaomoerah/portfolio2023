@@ -294,7 +294,8 @@ header {
         border-radius: 8px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         height: 395px;
         width: 100%;
@@ -319,14 +320,25 @@ header {
         img {
             // max-width: 100%;
             max-width: 100%;
-            max-height: 100%;
+            max-height: 85%;
             // margin-top: 30px;
+        }
+
+        .sunRunImage {
+            max-height: 90%;
         }
 
         .phonePreview {
             max-height: 100%;
             max-width: 100%;
         }
+    
+    .projectInfo {
+        p:first-of-type {
+            margin-top: 8px;
+            margin-bottom: 0px;
+        }
+    }
 
     .projectOne {
         background-color: $color5;
@@ -348,7 +360,7 @@ header {
         display: hidden;
         justify-content: space-evenly;
         flex-direction: column;
-        padding: 30px;
+        padding: 5px 30px;
         opacity: 0;
         position: absolute;
         border-radius: 8px;
@@ -364,6 +376,11 @@ header {
             top: 20px;
             right: 20px;
         }
+
+        // p:first-of-type {
+        //     margin-top: 8px;
+        //     margin-bottom: 0px;
+        // }
 
         h4 {
             font-size: 1.3rem;
@@ -533,6 +550,7 @@ header {
         transition: all .3s;
         background-color: $black;
         color: white;
+        border: 2px solid $black;
         cursor: pointer;
         margin: 0;
         padding: 20px 30px;

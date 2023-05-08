@@ -1,6 +1,22 @@
-@media (min-width: 1250px) {
+// @media (min-width: 1350px ) {
+//     .sunRunInfo {
+//         padding-left: 100px;
+//     }
 
-    // nav {
+//     .sunRunImage {
+//         width: 40%;
+//     }
+// }
+
+@media (min-width: 1250px) {
+    .sunRunInfo {
+            padding-left: 100px;
+        }
+    
+    .sunRunImage {
+            width: 40%;
+        }
+   
         
         .webMenu {
             display: flex;
@@ -16,11 +32,18 @@
         .mobileMenu {
             display:none;
         }
-
-    // }    
+  
 }
 
 @media (min-width: 1080px) {
+
+    .sunRunInfo {
+            padding-left: 100px;
+        }
+    
+    .sunRunImage {
+            width: 40%;
+        }
 
     .contact {
         height: 50vh;
@@ -45,6 +68,10 @@
 
 
 @media (min-width: 1025px) {
+
+    .sunRunInfo {
+        padding-left: 55px;
+    }
 
     h1 {
         font-size: 3.8rem;
@@ -150,7 +177,9 @@
 @media (min-width: 575px) and (max-width: 768px) {
 
     // .intro {
-    
+    .sunRunInfo {
+        padding-left: 0;
+    }
             .photoContainer {
     
                 img {
@@ -232,8 +261,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin: 0 auto;
+        // margin: 0 auto;
         max-width: 50%;
+        padding-left: 15px;
     }
 
     .projectConnect {
