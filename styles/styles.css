@@ -347,6 +347,8 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 10;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 nav button {
   background: none;
@@ -452,7 +454,6 @@ header {
 
 .blackBtn {
   background-color: #000000;
-  border: 2px solid #000000;
   border-radius: 5px;
   color: #FFFFFF;
 }
@@ -461,6 +462,7 @@ header {
 }
 .blackBtn:hover, .blackBtn:focus-visible {
   background-color: #FFFFFF;
+  border: 2px solid #000000;
   color: #000000;
   cursor: pointer;
 }
@@ -624,10 +626,6 @@ header {
 img {
   max-width: 100%;
   max-height: 85%;
-}
-
-.sunRunImage {
-  max-height: 90%;
 }
 
 .phonePreview {
@@ -905,13 +903,12 @@ footer p {
   font-size: 0.7rem;
 }
 
+@media (min-width: 1525px) {
+  .projectInfo.laptopMockInfo {
+    padding-left: 88px;
+  }
+}
 @media (min-width: 1250px) {
-  .sunRunInfo {
-    padding-left: 100px;
-  }
-  .sunRunImage {
-    width: 40%;
-  }
   .webMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -922,7 +919,7 @@ footer p {
             flex-direction: row;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
   }
   .mobileMenuButton {
     display: none;
@@ -930,14 +927,16 @@ footer p {
   .mobileMenu {
     display: none;
   }
+  .projectInfo.laptopMockInfo {
+    padding-left: 63px;
+  }
+}
+@media (min-width: 1225) {
+  .projectInfo.laptopMockInfo {
+    padding-left: 61px;
+  }
 }
 @media (min-width: 1080px) {
-  .sunRunInfo {
-    padding-left: 100px;
-  }
-  .sunRunImage {
-    width: 40%;
-  }
   .contact {
     height: 50vh;
   }
@@ -955,9 +954,6 @@ footer p {
   }
 }
 @media (min-width: 1025px) {
-  .sunRunInfo {
-    padding-left: 55px;
-  }
   h1 {
     font-size: 3.8rem;
     padding-bottom: 80px;
@@ -1008,42 +1004,10 @@ footer p {
   width: 100%;
 }
 
-.skillsList ul {
-  width: 50%;
-}
-.skillsList li {
-  margin: 30px;
+.projectInfo.laptopMockInfo {
+  padding-left: 39px;
 }
 
-@media (min-width: 765px) and (max-width: 1024px) {
-  h1 {
-    font-size: 3rem;
-  }
-  .photoContainer img {
-    max-width: 50%;
-    height: auto;
-  }
-  .skillSubtitle {
-    margin: 25px;
-  }
-}
-@media (min-width: 575px) and (max-width: 768px) {
-  .sunRunInfo {
-    padding-left: 0;
-  }
-  .photoContainer img {
-    max-width: 100%;
-    height: 565px;
-  }
-  .overlay {
-    padding: 10px;
-  }
-}
-@media (min-width: 675px) {
-  .projectContainer {
-    margin: 7px 25px;
-  }
-}
 @media (min-width: 810px) {
   .wrapper {
     width: 70%;
@@ -1067,6 +1031,9 @@ footer p {
     position: static;
     top: 0%;
   }
+  .laptopMock {
+    width: 40%;
+  }
   .projectInfo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1081,7 +1048,43 @@ footer p {
     max-width: 50%;
     padding-left: 15px;
   }
+  .projectInfo.laptopMockInfo {
+    padding-left: 25px;
+  }
   .projectConnect a {
     margin: 0px 10px;
+  }
+}
+.skillsList ul {
+  width: 50%;
+}
+.skillsList li {
+  margin: 30px;
+}
+
+@media (min-width: 765px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .photoContainer img {
+    max-width: 50%;
+    height: auto;
+  }
+  .skillSubtitle {
+    margin: 25px;
+  }
+}
+@media (min-width: 575px) and (max-width: 768px) {
+  .photoContainer img {
+    max-width: 100%;
+    height: 565px;
+  }
+  .overlay {
+    padding: 10px;
+  }
+}
+@media (min-width: 675px) {
+  .projectContainer {
+    margin: 7px 25px;
   }
 }
