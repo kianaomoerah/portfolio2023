@@ -230,6 +230,7 @@ html {
 html {
   font-size: 125%;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
@@ -421,10 +422,6 @@ nav button:hover {
   margin-left: 13px;
 }
 
-header {
-  max-height: 150vh;
-}
-
 .intro {
   max-height: 100%;
 }
@@ -507,7 +504,7 @@ header {
 
 .about {
   padding: 20px;
-  margin: 50px auto;
+  margin: 50px auto 0px auto;
 }
 
 .skills {
