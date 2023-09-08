@@ -561,18 +561,8 @@ nav button:hover {
   cursor: default;
 }
 
-.skillsList .ruby li {
-  margin: 28px;
-}
-
-.ruby li {
-  margin: 24px;
-  font-size: 3rem;
-}
 .ruby .devicon-rails-plain-wordmark {
-  font-size: 3rem;
-}
-.ruby i {
+  font-size: 2.3rem;
   margin-bottom: 0;
 }
 
@@ -648,7 +638,7 @@ img {
 }
 
 .projectFour {
-  background-color: #8C6D6A;
+  background-color: #DBDCE6;
 }
 
 .overlay {
@@ -729,7 +719,7 @@ img {
 }
 
 .overlayFour {
-  background-color: #8C6D6A;
+  background-color: #DBDCE6;
 }
 
 .overlaySkillsList {
